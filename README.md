@@ -23,7 +23,7 @@
 Welcome to our first week 3 pair programming project for Intermediate JavaScript at
 [Epicodus](https://epicodus.com).
 
-We started it on Monday February 4th 2022 from [this project's
+We started it on Monday February 7th 2022 from [this project's
 lesson](https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/making-api-calls-with-javascript)
 in the [curriculum](https://learnhowtoprogram.com/).
 

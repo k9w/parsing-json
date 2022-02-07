@@ -1,6 +1,7 @@
 node_modules/
 .DS_Store
-# dist/
+dist/
 coverage/
-.env/
+.env
+package-lock.json
 
