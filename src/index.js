@@ -3,16 +3,16 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 
+
 // Business Logic
 
 function checkNumber(number) {
   if (isNaN(number) || number < 0) {
-    return new Error("Not a valid number!");
+    return new Error();
   } else {
     return true;
   }
 }
-
 
 
 // User Interface Logic
@@ -37,9 +37,9 @@ $(document).ready(function() {
 
     function getElements(response) {
       $('.showHumidity').text(`The humidity in ${city} is ${response.main.humidity}%`);
-      $('.showTemp').text(`The temperature in Kelvins is ${response.main.temp} degrees.`);
+      $('.showTemp').text("The temperature in Celsius is " + (response.main.temp - 273.15) + " degrees. ");
+      $('.showsFeelsLike').text("Temperature it feels like is " + (parseInt(response.main.feels_like) - 273.15) + " degrees.");
     }
-
   });
   
   $('#submittedNumber').click(function() {
