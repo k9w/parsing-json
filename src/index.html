@@ -1,17 +1,16 @@
-<!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Weather</title>
 </head>
 <body>
   <div class="container">
-    <h1>Hello World</h1>
-    <img src="assets/images/openbsd.png">
-    <p>UI will go here.</p>
+    <h1>Get Weather Conditions From Anywhere!</h1>
+    <label for="location">Enter a location:</label>
+    <input id="location" type="text">
+    <button class="btn-success" id="weatherLocation">Get Current Temperature and Humidity</button>
+    <div class="showErrors"></div>
+    <div class="showHumidity"></div>
+    <div class="showTemp"></div>
   </div>
 </body>
 </html>
-
