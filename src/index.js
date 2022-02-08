@@ -28,6 +28,8 @@ $(document).ready(function() {
   });
 });
 
+// The commented-out code below is from two commits ago where we used a callback instead of a promise.
+
 
 /*
 // Business Logic
@@ -68,22 +70,6 @@ $(document).ready(function() {
     }
   });
   
-  $('#submittedNumber').click(function() {
-    const inputtedNumber = parseInt($('#number').val());
-    $('#number').val("");
-
-    try {
-      const isNumberValid = checkNumber(inputtedNumber);
-      if (isNumberValid instanceof Error) {
-        console.error(isNumberValid.message);
-        throw RangeError("Not a valid number!");
-      } else {
-        console.log("Try was successful, so no need to catch!");
-        $('#displayNumber').text("This number is valid. You may continue.");
-      }
-    } catch(error) {
-      console.error(`Red alert! We have an error: ${error.message}`);
-    }
-  });
+  
 });
 */
